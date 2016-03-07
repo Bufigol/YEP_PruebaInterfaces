@@ -42,10 +42,11 @@
             android:layout_alignLeft="@+id/imageView"
             android:layout_alignStart="@+id/imageView"
             android:hint="@string/passwordField_hint"
-            style="@style/editTextInput" />
+            style="@style/editTextInput"
+            android:layout_width="match_parent" />
 
         <Button
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/loginBtn_label"
             android:id="@+id/login"
