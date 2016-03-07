@@ -1,5 +1,4 @@
 package com.bufigol.yep;
-
 import android.app.Application;
 import android.test.ApplicationTestCase;
 

@@ -9,76 +9,47 @@
 
     <TextView
         android:id="@+id/Title"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAlignment="center"
-        android:textColor="#ffffff"
-        android:textIsSelectable="false"
-        android:textSize="80sp"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="38dp"
-        android:text="@string/app_name" />
+        android:text="@string/app_name"
+        style="@style/Titulo" />
 
     <TextView
         android:id="@+id/subTitle"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textColor="#ffffff"
-        android:textAlignment="center"
-        android:textSize="30sp"
         android:layout_below="@+id/Title"
-        android:layout_centerHorizontal="true"
-        android:text="@string/subTitle" />
+        android:text="@string/subTitle"
+        style="@style/Subtitulo" />
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:paddingTop="45dp"
         android:orientation="vertical"
         android:id="@+id/linearLayout"
         android:background="#ffffff"
-        android:layout_below="@+id/subTitle"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="false"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="false">
+        android:gravity="center"
+        android:layout_alignStart="@+id/Title"
+        android:layout_marginTop="75dp"
+        android:layout_alignParentBottom="false"
+        android:layout_alignParentRight="false"
+        android:layout_alignParentLeft="false"
+        android:layout_centerInParent="true">
 
         <EditText
             android:id="@+id/userFieldSign"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
             android:layout_above="@+id/loginBtn"
             android:layout_alignLeft="@+id/imageView"
             android:layout_alignStart="@+id/imageView"
-            android:focusable="true"
             android:hint="@string/username_hint"
-            android:textSize="18sp"
-            android:layout_gravity="center_horizontal"
-            android:singleLine="true"
-            android:maxLines="1"
-            android:lines="1"
-            android:maxLength="10" />
+            style="@style/editTextInput" />
 
         <EditText
             android:id="@+id/passwordField"
-            android:layout_width="fill_parent"
-            android:layout_height="fill_parent"
             android:layout_above="@+id/loginBtn"
             android:layout_alignLeft="@+id/imageView"
             android:layout_alignStart="@+id/imageView"
             android:hint="@string/passwordField_hint"
-            android:inputType="textPassword"
-            android:password="false"
-            android:theme="@style/AppTheme"
-            android:textSize="18sp"
-            android:layout_gravity="center_horizontal"
-            android:singleLine="true"
-            android:lines="1"
-            android:maxLines="1" />
+            style="@style/editTextInput" />
 
         <Button
-            android:layout_width="fill_parent"
-            android:layout_height="fill_parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:text="@string/loginBtn_label"
             android:id="@+id/login"
             android:onClick="irAlMain" />
