@@ -17,7 +17,13 @@
 
     <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 
-    <style name="Titulo">
+
+    <style name="YepTheme" parent="AppTheme">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+    <style name="Titulo" parent="YepTheme">
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:textAlignment">center</item>
@@ -29,7 +35,7 @@
         <item name="android:layout_marginTop">38dp</item>
     </style>
 
-    <style name="Subtitulo">
+    <style name="Subtitulo" parent="YepTheme">
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:textColor">#ffffff</item>
@@ -38,7 +44,7 @@
         <item name="android:layout_centerHorizontal">true</item>
     </style>
 
-    <style name="editTextInput">
+    <style name="editTextInput" parent="YepTheme">
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:focusable">true</item>
